@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+	int quantidade, escolha, multi, resul;
+printf("Digite a quantidade de pacotes: \n");
+scanf("%i", &quantidade);
+
+printf("Escolha o tipo de transmissao: \n");
+printf("Digite 1 para Unicast \n");
+printf("Digite 2 para Multicast \n");
+printf("Digite 3 para Broadcast \n");
+scanf("%i", &escolha);
+
+if(escolha == 1) {
+printf("O numero de pacotes enviados e: 1 \n");
+}
+
+else if(escolha == 2) {
+	printf("Digite a quantidade de dispositivos: \n");
+	scanf("%i", &multi);
+	resul = quantidade - multi;
+printf("O numero de pacotes perdidos e: %i \n", resul);
+printf("O numero de pacotes recebidos e: %i \n", multi);
+}
+
+else {
+	printf("O numero de pacotes enviados e: %i \n", quantidade);
+}
+	return 0;
+}
+

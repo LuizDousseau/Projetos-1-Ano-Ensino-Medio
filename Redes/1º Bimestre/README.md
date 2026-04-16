@@ -2,5 +2,5 @@
 
 Data de apresentação: 06/04/2026.   
 Nota: ?   
-Feito por: Luiz Otavio, Bruno Rafael, Matheus Pellegrini.
+Feito por: Luiz Otavio, Bruno Rafael, Matheus Pellegrini.   
 Apresentado via video por: Luiz Otavio

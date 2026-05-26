@@ -44,9 +44,6 @@ fimse
   fimse
   
 
-escreval("O primeiro digito é", s1)
-escreval("O segundo digito é", dg2)
-
 se (n1 = s1) e (n2 = dg2) entao
  escreval("O CPF é valido!")
  cpfvalidos <- cpfvalidos + 1
@@ -56,7 +53,7 @@ se (n1 = s1) e (n2 = dg2) entao
  fimse
  
 escreval(" ")
-escreval("Fazer outro CPF? ")
+escreval("Fazer outro CPF? (Sim ou Não)")
 leia(funcionar)
 
 cpf_quantidade <- cpf_quantidade + 1
@@ -73,12 +70,13 @@ dg2 <- 0
 resto <- 0
 
 
-ate (funcionar = "nao") ou (funcionar = "Nao")
+ate (funcionar = "nao") ou (funcionar = "Nao") ou (funcionar = "não") ou (funcionar = "Não") ou (funcionar = "NAO")
 
 cpfinvalidospor <- (cpfinvalidos / cpf_quantidade) * 100
 cpfvalidospor <- (cpfvalidos / cpf_quantidade) * 100
 
-
+escreval(" ")
+escreval("Relátorio:")
 escreval("Quantos CPF'S foram verificados: ", cpf_quantidade)
 escreval("Quantos CPF'S Validos: ", cpfvalidos)
 escreval("Quantos CPF'S Invalidos:", cpfinvalidos)

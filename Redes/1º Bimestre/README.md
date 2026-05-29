@@ -2,6 +2,6 @@
 
 Data de entrega: 04/04/2026.   
 Nota: 10,0.    
-Feito por: Luiz Otavio, Bruno Rafael, Matheus Pellegrini, Bruno RafaelFeito por: Luiz Otavio, Bruno Rafael, Matheus Pellegrini.   
+Feito por: Luiz Otavio, Bruno Rafael, Matheus Pellegrini.   
 Apresentado via video por: Luiz Otavio.   
-Apresentado via video por: Luiz Otavio
+

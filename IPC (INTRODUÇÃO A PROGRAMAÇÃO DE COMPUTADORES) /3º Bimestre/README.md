@@ -1,4 +1,4 @@
-# Programa feito na linguagem VisualG
+# Programa feito na linguagem VisualG que irá fazer as medições de voltagem anotadas.
 
 Data de apresentação:10/09/2026.   
 Nota: 10,0.    

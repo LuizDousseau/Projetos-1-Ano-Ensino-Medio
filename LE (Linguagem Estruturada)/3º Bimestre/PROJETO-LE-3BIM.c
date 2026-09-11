@@ -22,13 +22,13 @@ int main() {
     for (i = 0; i < 5; i++) {
         printf("Turma: %s\n", turmas[i]);
 
-        for (j = 0; j < 6; j++) {
-            do {
-                printf("Digite os pontos de %s: ", esportes[j]);
-                scanf("%d", &pontos[i][j]);
+    for (j = 0; j < 6; j++) {
+    do {
+    printf("Digite os pontos de %s: ", esportes[j]);
+    scanf("%d", &pontos[i][j]);
 
-                if (pontos[i][j] < 10) {
-                    printf("[ERRO] A pontuacao deve ser no minimo 10.\n");
+        if (pontos[i][j] < 10) {
+            printf("[ERRO] A pontuacao deve ser no minimo 10.\n");
                 }
             } 
         while (pontos[i][j] < 10);
@@ -40,14 +40,14 @@ int main() {
     menor = pontos[0][0];
     for (i = 0; i < 5; i++) {
         for (j = 0; j < 6; j++) {
-            soma += pontos[i][j];
-              if (pontos[i][j] > maior) {
-                maior = pontos[i][j];
+        soma += pontos[i][j];
+        if (pontos[i][j] > maior) {
+        maior = pontos[i][j];
             }
-            if (pontos[i][j] < menor) {
+        if (pontos[i][j] < menor) {
                 menor = pontos[i][j];
             }
-            if (pontos[i][j] > 80) {
+        if (pontos[i][j] > 80) {
                 qtdExcelentes++;
                 excelentesTurma[i]++;
             }
@@ -72,8 +72,8 @@ int main() {
    estatisticas[3] = qtdAcimaMedia;
     estatisticas[4] = qtdExcelentes;
     for (i = 1; i < 5; i++) {
-        if (excelentesTurma[i] > excelentesTurma[turmaMaisExcelentes]) {
-            turmaMaisExcelentes = i;
+    if (excelentesTurma[i] > excelentesTurma[turmaMaisExcelentes]) {
+        turmaMaisExcelentes = i;
         }
     }
     estatisticas[5] = turmaMaisExcelentes;
@@ -99,10 +99,9 @@ int main() {
     printf("\n");
 
     for (i = 0; i < 5; i++) {
-        printf("%-10s", turmas[i]);
-
-        for (j = 0; j < 6; j++) {
-            printf("%-12d", pontos[i][j]);
+    printf("%-10s", turmas[i]);
+    for (j = 0; j < 6; j++) {
+    printf("%-12d", pontos[i][j]);
         }
         printf("\n");
     }
@@ -120,8 +119,7 @@ int main() {
     printf("\n");
 
     for (j = 0; j < 6; j++) {
-        printf(
-            "Esporte: %s  Turma: %s\n", esportes[j], turmas[melhores[j]]);
+        printf("Esporte: %s  Turma: %s\n", esportes[j], turmas[melhores[j]]);
     }
     char busca[10];
     char continuar;
@@ -137,15 +135,14 @@ int main() {
 
         for (i = 0; i < 5; i++) {
             if (strcmp(busca, turmas[i]) == 0) {
-                float somaBusca = 0;
-                float mediaBusca;
-                encontrada = 1;
-                printf("\nTurma encontrada: %s", turmas[i]);
-                printf("\n");
-
-                for (j = 0; j < 6; j++) {
-                    printf("%s: %d pontos\n", esportes[j], pontos[i][j]);
-                    somaBusca += pontos[i][j];
+            float somaBusca = 0;
+            float mediaBusca;
+            encontrada = 1;
+            printf("\nTurma encontrada: %s", turmas[i]);
+            printf("\n");
+            for (j = 0; j < 6; j++) {
+                printf("%s: %d pontos\n", esportes[j], pontos[i][j]);
+                somaBusca += pontos[i][j];
                 }
                 mediaBusca = somaBusca / 6;
                 printf("\n");
@@ -154,14 +151,14 @@ int main() {
             }
         }
         if (!encontrada) {
-            printf("\n[ERRO] Turma nao localizada na base de dados.\n");
+        printf("\n[ERRO] Turma nao localizada na base de dados.\n");
         }
         printf("\nDeseja realizar outra busca? (s/n): ");
         scanf(" %c", &continuar);
 } 
 while (continuar == 's' || continuar == 'S');
     printf("\n");
-    printf("FIM DO PROGRAMA");
+    printf("FIM DO PROGRAMA!");
     printf("\n");
 
 

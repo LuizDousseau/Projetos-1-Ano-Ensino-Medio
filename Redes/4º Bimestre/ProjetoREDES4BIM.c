@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
     int maiorsequencia = 0;
     float porcento = 0;
 
-    printf("Programa Perda de Pacotes\n");
+    printf("Teste de envio de pacotes\n");
     printf("\nDeseja enviar quantos pacotes\n");
     scanf("%d", &qp);
     for (i = 0; i < qp; i++) {

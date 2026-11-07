@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
     printf("Teste de envio de pacotes\n");
     printf("\nDeseja enviar quantos pacotes\n");
     scanf("%d", &qp);
-    for (i = 0; i < qp; i++) {
+    for (i = 1; i <= qp; i++) {
     printf("\nQual o estado do pacote %d? (1-enviado/0-perdido):\n", i);
     scanf("%d", &pacotes[i]);
     if (pacotes[i] == 1) {
